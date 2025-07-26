@@ -2,7 +2,7 @@
 name = "kalman_filter"
 version = "0.1.0"
 edition = "2024"
-dependencies:"A comprehensive Kalman filter library supporting standard, extended 
+dependencies="A comprehensive Kalman filter library supporting standard, extended 
 and unscented Kalman filter"
 licence="MIT"
 repository = 
