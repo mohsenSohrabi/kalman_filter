@@ -2,11 +2,20 @@
 name = "kalman_filter"
 version = "0.1.0"
 edition = "2024"
-dependencies="A comprehensive Kalman filter library supporting standard, extended 
-and unscented Kalman filter"
+dependencies="A comprehensive Kalman filter library supporting standard, extended and unscented Kalman filter"
 licence="MIT"
-repository = 
-
+repository ="https://github.com/mohsenSohrabi/kalman_filter" 
 keywords = ["kalman-filter", "signal-processing", "control-systems"]
+categories = ["science", "mathematics","AI"]
+
 
 [dependencies]
+nalgebra="0.33"
+rand="0.9"
+serde = { version = "1.0", features = ["derive"], optional = true }
+
+[dev-dependencies]
+approx = "0.5"
+
+[features]
+serde = ["dep:serde", "nalgebra/serde-serialize"]
